@@ -48,10 +48,41 @@ day > 0 && day <= 10 ? console.log('first') : day > 10 && day <= 20 ?
     console.log('second') : day > 20 && day <= 31 ?
     console.log('third') : console.log('error');
 
+/*
+- Скласти розклад на тиждень за домопоги switch.
+Користувач вводить порядковий номер дня тижня і на екрані
+відображається інфа що заплановано на цей день
+(можна замість плану на день, назву дня англійською).
+*/
+ let num = +prompt ();
+ switch (num) {
+     case 1:
+         console.log('sunday');
+         break;
+     case 2:
+         console.log('monday');
+         break;
+     case 3:
+         console.log('tuesday');
+         break;
+     case 4:
+         console.log('wednesday');
+         break;
+     case 5:
+         console.log('thursday');
+         break;
+     case 6:
+         console.log('friday');
+         break;
+     case 7:
+         console.log('saturday');
+         break;
+     default:
+         console.log('error');
+ }
+
 
 /*
-- Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
-
     - Користувач вводить або має два числа.
         Потрібно знайти та вивести максимальне число з тих двох .
         Також потрібно врахувати коли введені рівні числа.
