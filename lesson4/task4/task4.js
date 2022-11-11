@@ -1,16 +1,41 @@
 /*
 - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
    */
-
+/*
     for (let i = 0; i < 10; i++) {
-        document.write(`<div>${i}</div>`);
+        document.write(`<div> text </div>`);
     }
-
+*/
 
 /*
 - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
+*/
+/*
+    for (let i = 0; i < 10; i++) {
+        document.write(`<div>${i} Text </div>`);
+    }
+*/
+ /*
 - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+*/
+    /*
+    let i = 0;
+    while (i<20) {
+        document.write(`<h2> Text </h2>`);
+        i++;
+    }
+    */
+
+  /*
 - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
+*/
+/*
+let i = 0;
+while (i<20) {
+    document.write(`<h2>${i} Text </h2>`);
+    i++;
+}
+*/
 /*
 - Використовуючи данні з масиву, за допомоги document.write та циклу
 побудувати структуру по шаблону
@@ -32,12 +57,22 @@
 замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
 */
 /*
+    let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb','react', 'angular', 'node.js'];
+    document.write(`<ul>`)
+    for (const listOfItem of listOfItems) {
+        document.write(`<li>${listOfItem}</li>`)
+    }
+    document.write(`</ul>`)
+*/
+/*
 -----------------------------------------------
+*/
 
+/*
     Використовуючи данні з масиву, за допомоги document.write та циклу
 побудувати структуру по шаблону  Зробити адекватну стилізацію
 Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
-
+*/
 let products = [
     {
         title: 'milk',
@@ -61,17 +96,34 @@ let products = [
     },
 ];
 
+for (const product of products) {
+    document.write(`
+        <div class="product-card">
+            <h3 class="product-title">TITLE ${product.title}. Price ${product.price}</h3>
+            <img src="${product.image}" alt="${product.title}" class="product-image">
+        </div>
+    `)
+}
+
+
+/*
 ШАБЛОН
 <div class="product-card">
     <h3 class="product-title">TITLE. Price - PRICE</h3>
 <img src="IMAGE" alt="" class="product-image">
 </div>
 Замість TITLE PRICE IMAGE - підставити відповідні поля з об'єкту
+*/
 
 
 
---------------------
-    є масив
+
+
+
+
+
+/*
+є масив
 let users = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
@@ -85,6 +137,10 @@ let users = [
     {name: 'olya', age: 31, status: false},
     {name: 'max', age: 31, status: true}
 ];
+
+
+
+
 за допомоги циклу вивести:
     - користувачів зі статусом true
 - користувачів зі статусом false
