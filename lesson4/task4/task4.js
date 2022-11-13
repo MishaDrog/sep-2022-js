@@ -73,6 +73,8 @@ while (i<20) {
 побудувати структуру по шаблону  Зробити адекватну стилізацію
 Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон
 */
+
+/*
 let products = [
     {
         title: 'milk',
@@ -105,7 +107,6 @@ for (const product of products) {
     `)
 }
 
-
 /*
 ШАБЛОН
 <div class="product-card">
@@ -120,10 +121,11 @@ for (const product of products) {
 
 
 
-
-
 /*
-є масив
+
+
+ // є масив
+*/
 let users = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
@@ -138,12 +140,56 @@ let users = [
     {name: 'max', age: 31, status: true}
 ];
 
+// за допомоги циклу вивести:
+//   - користувачів зі статусом true
+
+for (const user of users ) {
+    if (user.status) {
+        console.log(user);
+    }
+}
+
+// - користувачів зі статусом false
+
+
+ for (const user of users ) {
+    if (!user.status) {
+        console.log(user);
+    }
+}
+
+
+// - користувачів які старші за 30 років
+
+for (const user of users) {
+    if (user.age > 30)  {
+        console.log(user);
+    }
+}
 
 
 
-за допомоги циклу вивести:
-    - користувачів зі статусом true
-- користувачів зі статусом false
-- користувачів які старші за 30 років
+/* Напишіть програму, якав виводить через console.log усі числа
+від 1 до 100, з трьома вийнятками.
+- для чисел що націло діляться  на 3, вона повинна виводити 'Fizz',
+а для чисел, що діляться на 5 - 'Buzz'.
+- для чисел які кратні 3 та 5 = 'FizzBuzz'
 
-*/
+ */
+    for (let i = 1; i <= 100; i += 1) {
+        if (i % 3 == 0 && i % 5 === 0) {
+            console.log('FizzBuzz');
+        } else if (i % 3 === 0) {
+            console.log('Fizz');
+        } else  if (i % 5 === 0) {
+            console.log('Buzz');
+        } else {
+            console.log(i);
+        }
+    }
+
+
+
+
+
+
