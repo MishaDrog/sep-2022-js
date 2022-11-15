@@ -188,7 +188,20 @@ for (const user of users) {
         }
     }
 
+    /* 2 варіант вирішення цього завдання
 
+     */
+
+    for (let i = 1; i <= 100; i+=1) {
+        let str = '';
+        if (i % 3 === 0) {
+            str = str + 'Fizz';
+        }
+        if (i % 5 === 0) {
+            str = str + 'Buzz';
+        }
+        console.log(str || i);
+    }
 
 
 
