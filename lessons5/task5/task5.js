@@ -35,7 +35,7 @@ perimetr(3, 8);
 */
 //- створити функцію яка обчислює та повертає площу
 // кола з радіусом r=5
-
+/*
 function circle (p,r) {
     let result = (3.14 * r);
     return result;
@@ -43,6 +43,9 @@ function circle (p,r) {
 }
 let x = circle (3.14,25);
 console.log(x);
+
+*/
+
 /*
 let p = 3.14;
 let r = (Math.pow(5,2));
@@ -51,3 +54,7 @@ console.log(Math.pow(5,2));
 
 // - створити функцію яка обчислює та повертає площу
 // циліндру висотою h, та радіутом r
+
+ const squareCircle = (r) => Math.PI * Math.pow(r, 2)* h;
+ console.log(squareCircle(5));
+
