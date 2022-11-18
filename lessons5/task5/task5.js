@@ -159,7 +159,7 @@ console.log(Math.pow(5,2));
         function foo(array) {
             let sum = 0;
             for (const item of array) {
-                sum += item;
+                sum += item; //  sum = sum + item
             }
             return sum;
         }
