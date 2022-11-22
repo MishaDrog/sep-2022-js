@@ -32,8 +32,10 @@ console.log(cool.toLowerCase());
 
 /*
 - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
-*/
 
+let str = ' dirty string   ';
+console.log(str.trim());
+*/
 /*
 let str = ' dirty string   ';
 
@@ -43,13 +45,23 @@ let str = ' dirty string   ';
     let str = 'Ревуть воли як ясла повні';
 let arr = stringToarray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
 */
+/*
 let str = 'Ревуть воли як ясла повні';
-console.log(str.split());
-
-
-
+let strings = str.split(' ');
+console.log(strings);
+*/
 /*
 - є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
+*/
+    /*
+    const arr = [10,8,-7,55,987,-1011,0,1050,0];
+    let string = arr.map(value => value.toString());
+    let string = arr.map(value => String(value));
+    let string = arr.map(value => value + '');
+
+    console.log(string);
+    */
+ /*
 - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
     let nums = [11,21,3];
 sortNums(nums,'ascending') // [3,11,21]
@@ -67,6 +79,7 @@ let coursesAndDurationArray = [
 ];
 -- відсортувати його за спаданням за monthDuration
 */
+/*
 let coursesAndDurationArray = [
     {title: 'JavaScript Complex', monthDuration: 5},
     {title: 'Java Complex', monthDuration: 6},
