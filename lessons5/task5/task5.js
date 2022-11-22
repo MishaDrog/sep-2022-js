@@ -155,6 +155,7 @@ console.log(Math.pow(5,2));
 /*
 - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
 */
+/*
         let arr = [1,2,10];
         function foo(array) {
             let sum = 0;
@@ -164,3 +165,12 @@ console.log(Math.pow(5,2));
             return sum;
         }
         console.log(foo(arr));
+
+*/
+        const array = ['first', 'second', 3442, 99393, -232, 123];
+
+        for (let i = 2; i < array.length; i += 1); {
+    console.log(array.length);
+    console.log(array[0]);
+        }
+
