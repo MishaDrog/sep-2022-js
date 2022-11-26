@@ -3,16 +3,19 @@
 - Знайти та вивести довжину наступних стрінгових значень
 'hello world', 'lorem ipsum', 'javascript is cool'
 */
+/*
 const message = 'hello world';
 console.log(message.length);
 // або одразу в console.log
 console.log('lorem ipsum'.length);
 console.log('javascript is cool'.length);
+
+*/
 /*
 - Перевести до великого регістру наступні стрінгові значення
 'hello world', 'lorem ipsum', 'javascript is cool'
  */
-
+/*
 const mes = 'hello world';
 console.log(mes.toUpperCase());
 let lorem = 'lorem ipsum';
@@ -23,6 +26,7 @@ console.log(js.toUpperCase());
 - Перевести до нижнього регістру настипні стрінгові значення
 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
  */
+/*
 const hel = 'HELLO WORLD';
 console.log(hel.toLowerCase());
 const lor = 'LOREM IPSUM';
@@ -30,6 +34,7 @@ console.log(lor.toLowerCase());
 let cool = 'JAVASCRIPT IS COOL';
 console.log(cool.toLowerCase());
 
+*/
 /*
 - Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 
@@ -166,17 +171,21 @@ console.log(filter);
 
  */
 
+
+/*
 const logins = [`m4ngoDoge`, `k1widad3st`,`poly1scute`, `aj4xth3m4n` ];
 
 const findLogin = function (allLogins, loginToFind) {
-        const massage = allLogins.includes(loginToFind)
+        return allLogins.includes(loginToFind)
         ?`користувач ${loginToFind} знайдений.`
             : `користувач ${loginToFind}не знайдений.`;
 
-        return message;
 };
 
 console.log(findLogin(logins, `avocod3r`));
 console.log(findLogin(logins, `k1widad3st`));
 console.log(findLogin(logins, `jam4l`));
 console.log(findLogin(logins, `poly1scute`));
+
+
+ */
