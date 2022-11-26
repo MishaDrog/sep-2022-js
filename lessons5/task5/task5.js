@@ -167,6 +167,7 @@ console.log(Math.pow(5,2));
         console.log(foo(arr));
 
 */
+/*
         const array = ['first', 'second', 3442, 99393, -232, 123];
 
         for (let i = 2; i < array.length; i += 1); {
@@ -174,3 +175,28 @@ console.log(Math.pow(5,2));
     console.log(array[0]);
         }
 
+*/
+
+ // у нас є масив із зарплатами працівників, потрібно порахувати
+// загальну суму зарплат
+/*
+    const salaries = [200, 450, 600, 150, 300];
+    let total = 0;
+    for (let i=0; i < salaries.length; i += 1 ) {
+        total += salaries[i];
+    }
+        console.log(total);
+*/
+    // 2й варінт вирішення задачі за допомогою циклу for...of
+
+    const salaries = [200, 450, 600, 150, 300];
+    let total = 0;
+
+    for (const item of salaries) {
+        total += item;
+    }
+    console.log(total);
+    // створюємо змінну const item в яку на
+// кожній ітерації буде записуватися кожен ел.масиву
+ // після оператора of вказуємо який масив ми перебираємо salaries
+// і цикл перебирає ввесь масив від початку до кінця ввесь масив salaries

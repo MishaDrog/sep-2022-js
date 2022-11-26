@@ -110,8 +110,8 @@ let sort = coursesAndDurationArray.sort(
 
 console.log(sort);
 
-
-
+let filter = coursesAndDurationArray.filter(value => value.monthDuration > 5);
+console.log(filter);
 
 /*
 -- відфільтрувати , залишивши тільки курси з тривалістю більше 5 місяців
@@ -129,8 +129,31 @@ console.log(sort);
         value: '', // '6'-'10', 'ace','jack','queen','king','joker'
     color:'', // 'red','black'
 }
+*/
+/*
+    const suits = [
+        {cardSuit: 'heart', color: 'red'},
+        {cardSuit: 'diamond', color: 'red'},
+        {cardSuit: 'spade', color: 'black'},
+        {cardSuit: 'clubs', color: 'black'},
+    ];
+    const cardNames = [6,7,8,9,10, 'jack','queen','king','joker'];
+    const deck = [];
 
+        for (const suit of suits) {
+            for (const cardName of cardNames) {
+                const card = {
+                    cardSuit: suit.cardSuit,
+                    value: cardName,
+                    color: suit.color
+                }
+                deck.push(card);
+            }
 
+        }
+            console.log(deck);
+*/
+/*
 Додатково по reduce
 Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
 {
@@ -142,3 +165,18 @@ console.log(sort);
 
 
  */
+
+const logins = [`m4ngoDoge`, `k1widad3st`,`poly1scute`, `aj4xth3m4n` ];
+
+const findLogin = function (allLogins, loginToFind) {
+        const massage = allLogins.includes(loginToFind)
+        ?`користувач ${loginToFind} знайдений.`
+            : `користувач ${loginToFind}не знайдений.`;
+
+        return message;
+};
+
+console.log(findLogin(logins, `avocod3r`));
+console.log(findLogin(logins, `k1widad3st`));
+console.log(findLogin(logins, `jam4l`));
+console.log(findLogin(logins, `poly1scute`));
