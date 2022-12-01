@@ -3,14 +3,14 @@
 - Знайти та вивести довжину наступних стрінгових значень
 'hello world', 'lorem ipsum', 'javascript is cool'
 */
-/*
+
 const message = 'hello world';
 console.log(message.length);
 // або одразу в console.log
 console.log('lorem ipsum'.length);
 console.log('javascript is cool'.length);
 
-*/
+
 /*
 - Перевести до великого регістру наступні стрінгові значення
 'hello world', 'lorem ipsum', 'javascript is cool'
@@ -22,6 +22,7 @@ let lorem = 'lorem ipsum';
 console.log(lorem.toUpperCase());
 let js = 'javascript is cool';
 console.log(js.toUpperCase());
+*/
 /*
 - Перевести до нижнього регістру настипні стрінгові значення
 'HELLO WORLD', 'LOREM IPSUM', 'JAVASCRIPT IS COOL'
@@ -172,13 +173,13 @@ console.log(filter);
  */
 
 
-/*
+
 const logins = [`m4ngoDoge`, `k1widad3st`,`poly1scute`, `aj4xth3m4n` ];
 
 const findLogin = function (allLogins, loginToFind) {
         return allLogins.includes(loginToFind)
         ?`користувач ${loginToFind} знайдений.`
-            : `користувач ${loginToFind}не знайдений.`;
+            : `користувач ${loginToFind} не знайдений.`;
 
 };
 
@@ -188,4 +189,3 @@ console.log(findLogin(logins, `jam4l`));
 console.log(findLogin(logins, `poly1scute`));
 
 
- */
