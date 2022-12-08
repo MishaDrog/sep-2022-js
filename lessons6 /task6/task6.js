@@ -68,7 +68,7 @@ console.log(strings);
     console.log(string);
     */
  /*
-- створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
+- створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меншого, або навпаки в залежності від значення аргументу direction.
     let nums = [11,21,3];
 sortNums(nums,'ascending') // [3,11,21]
 sortNums(nums,'descending') // [21,11,3]
@@ -172,7 +172,7 @@ console.log(filter);
 
  */
 
-
+/*
 
 const logins = [`m4ngoDoge`, `k1widad3st`,`poly1scute`, `aj4xth3m4n` ];
 
@@ -187,5 +187,29 @@ console.log(findLogin(logins, `avocod3r`));
 console.log(findLogin(logins, `k1widad3st`));
 console.log(findLogin(logins, `jam4l`));
 console.log(findLogin(logins, `poly1scute`));
+
+*/
+// вивести масив users за допомогою forEach
+  let users = [
+          {name: 'vasya', age: 31, status: false},
+          {name: 'petya', age: 30, status: true},
+          {name: 'kolya', age: 29, status: true},
+          {name: 'olya', age: 28, status: false},
+          {name: 'max', age: 30, status: true},
+          {name: 'anya', age: 31, status: false},
+          {name: 'oleg', age: 28, status: false},
+          {name: 'andrey', age: 29, status: true},
+          {name: 'nina', age: 30, status: false},
+          {name: 'ivan', age: 31, status: true},
+  ];
+
+        function whatIwantToDoWithmyObject (user) {
+                console.log(user);
+        }
+
+        users.forEach(whatIwantToDoWithmyObject);
+
+        // скорочений запис функціх
+        users.forEach((value) => console.log(value));
 
 
