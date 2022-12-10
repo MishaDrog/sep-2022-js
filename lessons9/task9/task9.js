@@ -71,6 +71,8 @@ for (const simpson of simpsons) {
 Цикл в циклі
 - Є масив
 */
+
+/*
 let coursesArray = [
     {
         title: 'JavaScript Complex',
@@ -153,11 +155,11 @@ for (const item of coursesArray) {
     mainDiv.append(title);
 
     let monthDuration = document.createElement('div');
-    monthDuration.innerText = `${item.title}`;
+    monthDuration.innerText = `${item.monthDuration}`;
     mainDiv.append(monthDuration);
 
     let hourDuration = document.createElement('div');
-    hourDuration.innerText = `${item.title}`;
+    hourDuration.innerText = `${item.hourDuration}`;
     mainDiv.append(hourDuration);
 
     let ul = document.createElement('ul');
@@ -170,6 +172,7 @@ for (const item of coursesArray) {
     }
 };
 
+*/
 /*
 Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей, для властивості modules зробити список з елементами
 Приклад структири знаходиться у файлі example.png
@@ -181,7 +184,21 @@ for (const item of coursesArray) {
 - додати стилі(довільні значення) : колір фону, колір тексту, розмір тексту
 - додати цей блок в body.
 - клонувати його повністю, та додати клон в body.
+*/
+        let div = document.createElement('div');
+        div.innerText = 'Hello';
+        div.classList.add( 'wrap', 'collapse', 'alpha', 'beta');
+        div.style.background = 'red';
+        div.style.color = 'blue';
+        div.style.fontSize = '40px';
+        document.body.append(div);
+        document.body.append(div.cloneNode(true));
 
+
+
+
+
+ /*
 - Є масив:
     ['Main','Products','About us','Contacts']
 Взяти файл template1.html та додати в нього скріпт котрий для кожного елементу масиву створює li та додає його до блоку .menu
