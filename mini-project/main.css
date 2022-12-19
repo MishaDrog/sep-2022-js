@@ -1,0 +1,25 @@
+
+
+
+
+
+
+.container {
+    background: yellow;
+    min-width: 800px;
+    display: flex;
+
+}
+
+.user-container {
+    background: orange;
+    height: 50px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.user-btn {
+    background: aqua;
+
+    border: 1px solid black;
+}
