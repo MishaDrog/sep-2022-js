@@ -14,7 +14,7 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
             container.classList.add('container')
 
             const anchor = document.createElement('a');
-            anchor.innerText = `Click me`;
+            anchor.innerText = `user details`;
             usersBlock.append(anchor);
             anchor.href = `userdetails.html?data=${item.id}`;
             anchor.classList.add('user-btn')

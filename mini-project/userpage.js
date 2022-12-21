@@ -66,10 +66,10 @@ button.onclick = function () {
         .then(posts => {
             for (const post of posts) {
                 let div = document.createElement('div');
-                div.innerText = `${post.id} - ${post.title}`;
+                div.innerText = ` ${post.title} `;
                 let a = document.createElement('a');
                 a.innerText = 'details about post';
-                a.href = 'postuserdetails.html?post=' + JSON.stringify(post);
+                a.href = `postuserdetails.html?post=${JSON.stringify(post)}`;
                 div.appendChild(a);
                 document.body.appendChild(div);
 
