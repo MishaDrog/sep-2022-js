@@ -69,7 +69,7 @@ button.onclick = function () {
                 div.innerText = ` ${post.title} `;
                 let a = document.createElement('a');
                 a.innerText = 'details about post';
-                a.href = `postuserdetails.html?post=${JSON.stringify(post)}`;
+                a.href = `postdetinfo.html?post=${JSON.stringify(post)}`;
                 div.appendChild(a);
                 document.body.appendChild(div);
 
@@ -93,7 +93,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             let div = document.createElement('div');
             div.innerText = `${user.id} ${user.name}`;
             let a = document.createElement('a');
-            a.href = `postuserdetails.html?id=${user.id}`;
+            a.href = `postdetinfo.html?id=${user.id}`;
             a.innerText = `posts of user`;
             div.appendChild(a);
 
@@ -147,7 +147,7 @@ btn.onclick = function () {
                 div.innerText = post.title;
                 let a = document.createElement('a');
                 a.innerText = 'details about post';
-                a.href = 'postuserdetails.html?post=' + JSON.stringify(post);
+                a.href = 'postdetinfo.html?post=' + JSON.stringify(post);
                 div.appendChild(a);
                 document.body.appendChild(div);
 
@@ -167,7 +167,7 @@ btn.onclick = function () {
                 div.innerText = post.title;
                 let a = document.createElement('a');
                 a.innerText = 'details about post';
-                a.href = 'postuserdetails.html?post=' + JSON.stringify(post);
+                a.href = 'postdetinfo.html?post=' + JSON.stringify(post);
                 div.appendChild(a);
                 document.body.appendChild(div);
 
