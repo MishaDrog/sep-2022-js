@@ -17,6 +17,8 @@ fetch(`https://jsonplaceholder.typicode.com/users`)
             anchor.innerText = `user details`;
             usersBlock.append(anchor);
             anchor.href = `userdetails.html?data=${item.id}`;
+
+
             anchor.classList.add('user-btn')
         }
     });

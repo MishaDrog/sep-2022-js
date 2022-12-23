@@ -1,13 +1,5 @@
 
 
-
-
-
-
-
-
-
-
 const url = new URL(location.href);
 const id = url.searchParams.get('data');
 
@@ -15,6 +7,8 @@ const id = url.searchParams.get('data');
 const container = document.createElement('div');
 container.classList.add('container')
 document.body.append(container);
+
+
 
 
 fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
@@ -47,8 +41,6 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
                             }
                             userInnerDiv.append(htmlDivElement);
 
-
-
                         }
                     }
                     userDiv.append(userInnerDiv);
@@ -56,15 +48,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
             }
 
             container.append(userDiv);
-           // document.body.append(userDiv);
-
-
-
-
-
-
-
-
+            // document.body.append(userDiv);
 
         }
 
@@ -74,16 +58,30 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
 
 
+
+
+
+
+
+
+
+
+//let target = document.querySelector('.target');
+//let button = document.querySelector('.button');
+
+
 const containerTitle = document.createElement('div');
 containerTitle.classList.add('container-title')
 document.body.append(containerTitle);
 
 
-
-
 let target = document.querySelector('.target');
 let button = document.querySelector('.button');
+
+
 button.onclick = function () {
+
+
     fetch(`https://jsonplaceholder.typicode.com/users/${id}/posts`)
         .then(value => value.json())
         .then(posts => {
@@ -92,24 +90,46 @@ button.onclick = function () {
             for (const post of posts) {
                 let div = document.createElement('div');
                 div.innerText = ` ${post.title} `;
+
+
                 let a = document.createElement('a');
                 a.innerText = 'details info about post';
                 a.href = `postdetinfo.html?post=${JSON.stringify(post)}`;
                 div.appendChild(a);
+
+
                 document.body.appendChild(div);
                 div.classList.add('short-info-post');
 
-
-
-
                 containerTitle.appendChild(div);
+
+
             }
-
-
 
         });
 
-    };
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

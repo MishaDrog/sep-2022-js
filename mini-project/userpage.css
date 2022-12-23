@@ -2,19 +2,50 @@
 
 
 .container {
+
     background-color: yellow;
+    width: 1150px;
+
+    border: 1px solid black;
+
 
 
 }
+
+
+.button {
+    background-color: cornflowerblue;
+    height: 50px;
+    width: 90%;
+}
+
 
 
 /* father container title */
 .container-title {
-    background-color: aqua;
+
+    border: 1px solid black;
+
+    width: 1150px;
+    background-color: cornflowerblue;
     display: flex;
+    flex-wrap: wrap;
 }
 
+
+
+
 .short-info-post {
+
+    height: 100px;
+    width: 200px;
     background-color: orange;
     border: 1px solid black;
+
+
+    margin-top: calc(1% - 3px);
+
+    margin-right: calc(5% - 59px);
+    margin-left: calc(5% - 50px);
+
 }
