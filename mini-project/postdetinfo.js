@@ -8,11 +8,88 @@
     let parse = JSON.parse(userPost);
     console.log(parse);
 
+
+
+
+
     const container = document.createElement('div');
+    container.classList.add('container')
     document.body.append(container);
 
-
 fetch(`https://jsonplaceholder.typicode.com/posts/${parse.id}`)
+    .then( (resp) => resp.json())
+    .then(posts => {
+
+
+        for (const item in posts) {
+            const  postInfo = document.createElement('div');
+            postInfo.innerText = `${item} ${posts[item]}`;
+            document.body.append(postInfo);
+
+            if (typeof posts[item] !== 'object') {
+                postInfo.innerText = `${item} - ${posts[item]}`;
+            } else {
+                postInfo.innerText = `${item} :`
+                for (const key in posts[item]) {
+                    const postInnerDiv = document.createElement('div');
+                    if (typeof posts[item][key] !== 'object') {
+                        postInnerDiv.innerText = `${key} - ${posts[item][key]}`;
+                    } else {
+                        postInnerDiv.innerText = `${key}:`;
+                        for (const element in posts[item][key]) {
+                            const htmlDivElement = document.createElement('div');
+                            if (typeof posts[item][key][element] !== 'object') {
+                                htmlDivElement.innerText = `${element} - ${posts[item][key][element]}`;
+                            }
+                            postInnerDiv.append(htmlDivElement);
+                        }
+                    }
+                    postInfo.append(postInnerDiv);
+                }
+            }
+            container.append(postInfo);    // container css
+            //document.body.append(postInfo);
+
+        }
+
+    });
+
+
+        const containerComents = document.createElement('div');
+        containerComents.classList.add('container-coments')
+        document.body.append(containerComents);
+
+   fetch(`https://jsonplaceholder.typicode.com/posts/${parse.id}/comments`)
+       .then(response => response.json())
+       .then(posts => {
+           for (const post of posts) {
+
+
+               for (const postKey in post) {
+                   let div = document.createElement('div');
+                   div.innerHTML = `<b>${postKey}: </b> ${post[postKey]}`
+                   let commentBlock = document.createElement('div')
+                   commentBlock.appendChild(div);
+                   //div.classList.add('short-info-coments');
+
+                   containerComents.append(div);
+
+
+               }
+
+           }
+       });
+
+
+
+
+
+
+// coments button
+
+/*
+
+fetch(`https://jsonplaceholder.typicode.com/posts/${parse.id}/comments`)
     .then( (resp) => resp.json())
     .then(posts => {
         for (const item in posts) {
@@ -44,32 +121,6 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${parse.id}`)
             document.body.append(postInfo);
         }
     });
-
-
-// coments button
-
-
-
-    let target = document.querySelector('.target');
-    let button = document.querySelector('.button');
-    button.onclick = function () {
-    fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`)
-        .then(value => value.json())
-        .then(posts => {
-            for (const post of posts) {
-                let div = document.createElement('div');
-                div.innerText = ` ${post.title} `;
-                let a = document.createElement('a');
-                a.innerText = 'details about post';
-                a.href = `postdetinfo.html?post=${JSON.stringify(post)}`;
-                div.appendChild(a);
-                document.body.appendChild(div);
-
-            }
-
-        });
-
-};
 
 
 

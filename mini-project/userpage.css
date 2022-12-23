@@ -1,0 +1,20 @@
+
+
+
+.container {
+    background-color: yellow;
+
+
+}
+
+
+/* father container title */
+.container-title {
+    background-color: aqua;
+    display: flex;
+}
+
+.short-info-post {
+    background-color: orange;
+    border: 1px solid black;
+}

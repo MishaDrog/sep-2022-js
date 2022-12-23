@@ -1,0 +1,36 @@
+
+
+body {
+
+
+}
+
+
+.post-page {
+
+
+}
+
+.container {
+    background-color: yellow;
+    border: 1px solid black;
+    height: 200px;
+    width: 800px;
+
+    text-align: center;
+
+
+}
+
+.container-coments {
+    background-color: aqua;
+    border: 1px solid black;
+
+    width: 800px;
+
+}
+
+.short-info-coments {
+    background-color: cornflowerblue;
+    border: 1px solid black;
+}
