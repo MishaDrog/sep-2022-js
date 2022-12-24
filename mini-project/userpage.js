@@ -66,10 +66,7 @@ fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
 
 
 
-//let target = document.querySelector('.target');
-//let button = document.querySelector('.button');
-
-
+/*
 const containerTitle = document.createElement('div');
 containerTitle.classList.add('container-title')
 document.body.append(containerTitle);
@@ -110,7 +107,7 @@ button.onclick = function () {
 
 };
 
-
+*/
 
 
 
