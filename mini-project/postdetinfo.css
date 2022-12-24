@@ -1,16 +1,5 @@
 
 
-body {
-
-
-}
-
-
-.post-page {
-
-
-}
-
 .container {
     background-color: yellow;
     border: 1px solid black;
@@ -28,12 +17,17 @@ body {
     font-size: large;
     color: mediumblue;
 
+}
 
+.container:hover {
+    background-color: #00d9ff;
+    color: black;
 
 }
 
+
 .container-coments {
-    background-color: aqua;
+    background-color: #00d9ff;
     border: 1px solid black;
     border-radius: 5px;
     width: 800px;
@@ -49,7 +43,7 @@ body {
 
 }
 
-.short-info-coments {
-    background-color: cornflowerblue;
-    border: 1px solid black;
+.container-coments:hover {
+    background-color: yellow;
+    color: mediumblue;
 }
