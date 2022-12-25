@@ -1,8 +1,5 @@
 
 
-
-
-
 const title = document.createElement('div');
 title.classList.add('title');
 document.body.append(title);
@@ -23,8 +20,6 @@ container.classList.add('container')
 document.body.appendChild(container);
 
 wrap.appendChild(container);
-
-
 
 
 

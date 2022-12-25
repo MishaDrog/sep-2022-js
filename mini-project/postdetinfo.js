@@ -58,8 +58,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${parse.id}`)
                     postInfo.append(postInnerDiv);
                 }
             }
-            container.append(postInfo);    // container css
-            //document.body.append(postInfo);
+            container.append(postInfo);
 
         }
 

@@ -10,7 +10,7 @@ body{
 .main-container {
     border: 1px solid black;
     border-radius: 5px;
-    background-color: silver;
+    background: aqua;
 }
 
 .title {
