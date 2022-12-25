@@ -1,6 +1,33 @@
 
 
+body {
+
+}
+.wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.title-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: mediumblue;
+
+}
+
+
 .container {
+
+    display: block;
 
     background-color: yellow;
     width: 1010px;
@@ -25,9 +52,11 @@
 
 
 .button {
+    display: flex;
+    justify-content: center;
     background-color: #00d9ff;
     height: 50px;
-    width: 1010px;
+    width: 90%;
     margin: 10px;
 
     text-align: center;
@@ -48,6 +77,8 @@
 
 /* father container title */
 .container-title {
+
+
     box-sizing: border-box;
 
     margin: 10px;

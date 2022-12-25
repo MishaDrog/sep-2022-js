@@ -10,9 +10,20 @@
 
 
 
+    const title = document.createElement('div');
+    title.classList.add('title');
+    document.body.append(title);
+    title.innerText = 'post details page';
 
 
-    const container = document.createElement('div');
+    const titleBlock = document.createElement('div');
+    titleBlock.classList.add('title-block');
+    document.body.append(titleBlock);
+    titleBlock.appendChild(title);
+
+
+
+const container = document.createElement('div');
     container.classList.add('container')
     document.body.append(container);
 
@@ -59,6 +70,14 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${parse.id}`)
         containerComents.classList.add('container-coments')
         document.body.append(containerComents);
 
+        let postPage = document.createElement('div');
+        postPage.classList.add('post-wrap');
+        document.body.append(postPage);
+
+        postPage.appendChild(titleBlock);
+        postPage.appendChild(container);
+        postPage.appendChild(containerComents);
+
    fetch(`https://jsonplaceholder.typicode.com/posts/${parse.id}/comments`)
        .then(response => response.json())
        .then(posts => {
@@ -73,6 +92,7 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${parse.id}`)
                    //div.classList.add('short-info-coments');
 
                    containerComents.append(div);
+
 
 
                }

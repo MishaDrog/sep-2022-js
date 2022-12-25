@@ -1,7 +1,26 @@
 
 
+const title = document.createElement('div');
+title.classList.add('title');
+document.body.append(title);
+title.innerText = 'mini-project page';
+
+
+
 const container = document.createElement('div');
 document.body.append(container);
+
+const maineContainer = document.createElement('div');
+document.body.append(maineContainer);
+maineContainer.classList.add('main-container');
+
+maineContainer.appendChild(title);
+maineContainer.appendChild(container);
+
+
+
+
+//container.appendChild(title);
 
 fetch(`https://jsonplaceholder.typicode.com/users`)
     .then(value => value.json())

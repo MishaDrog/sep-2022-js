@@ -2,9 +2,15 @@
 
 
 
+const titleWrap = document.createElement('div');
+    titleWrap.classList.add('title-wrap')
+document.body.append(titleWrap);
+
 const containerTitle = document.createElement('div');
 containerTitle.classList.add('container-title')
 document.body.append(containerTitle);
+
+titleWrap.appendChild(containerTitle);
 
 
 let target = document.querySelector('.target');

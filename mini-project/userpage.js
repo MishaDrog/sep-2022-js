@@ -1,12 +1,29 @@
 
 
+
+
+
+const title = document.createElement('div');
+title.classList.add('title');
+document.body.append(title);
+title.innerText = 'user details page';
+
+
+
 const url = new URL(location.href);
 const id = url.searchParams.get('data');
+
+const wrap = document.createElement('div');
+wrap.classList.add('wrap');
+document.body.append(wrap);
 
 
 const container = document.createElement('div');
 container.classList.add('container')
-document.body.append(container);
+document.body.appendChild(container);
+
+wrap.appendChild(container);
+
 
 
 
